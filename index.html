@@ -9,17 +9,54 @@
 
 	<h1>	My first formular	</h1>
 
-	<form> 
-		Name: <br/>
+	<form method = "GET"> 
+		Jméno: <br/>
 		<input type = "text" name = "name"/>
 		<br/>
 
-		Surname <br/>
+		Příjmení: <br/>
 		<input type="text" name="name"/>
+		<br/>
+		E-mail: <br/>
+		<input type="text" name="email"/>
+		<br/>
+		Telefon: <br/>
+		<input type="text" name="mobilephone" />
+		<br/>
+
+		Adresa: <br/>
+		<ul>
+		 Město:
+		<input type="text" name="city" />
+		<br/>
+		Ulice: 
+		<input type="text" name="street" />
+		<br/>
+		 PSČ:
+		<input type="text" name="postnumber" />
+		<br/>
+		Kraj:
+		<select name = "kraj">
+			<option value= "Praha">
+			Praha
+			<option/>	
+			<option value="Brno">
+			Brno
+			<option/>
+		</select>
+		</ul>
+		<br/>
+		Heslo:
+		<input type="password" name="password" />
+
 		<br/> <br/>
+		<input type="radio" name="gender" value = "male" checked /> Male <br/>
+		<input type="radio" name="gender" value="female" checked /> Female <br/>
+		<input type="radio" name="gender" value="other" checked /> Other <br/>
+		<input type="checkbox" name="agreement" value="agreement" unchecked /> Souhlas <br/>
 
-		<input type = "submit" value = "Odeslat" />
-
+		<br/> <br/>
+		<input type="submit" value="Send" />
 
 
 	</form>
